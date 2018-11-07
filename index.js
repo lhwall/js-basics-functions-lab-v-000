@@ -14,3 +14,22 @@ function distanceFromHqInFeet(pickup){
 function distanceTravelledInFeet(start, end){
   return blocksToFeet(Math.abs(start - end))
 }
+
+function calculatesFarePrice(start, destination){
+  const distance = distanceTravelledInFeet(start, destination)
+  let price = 0
+  switch (distance) {
+    case distance <= 400:
+      return 0
+    case distance <= 2000:
+      return .02 * distance 
+    case distance <= 2500:
+    return 25 
+
+    case distance > 2500 
+    return "'cannot travel that far"
+  }    
+  }
+
+  return price
+}
