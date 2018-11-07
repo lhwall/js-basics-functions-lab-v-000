@@ -8,5 +8,5 @@ function blocksToFeet(blocks){
 }
 
 function distanceFromHqInFeet(pickup){
-  blocksToFeet(distanceFromHqInBlocks(pickup))
+  return blocksToFeet(distanceFromHqInBlocks(pickup))
 }
