@@ -20,17 +20,17 @@ function calculatesFarePrice(start, destination){
   let price = 0
   switch (distance) {
     case distance <= 400:
-      price = 0
-      break
+      price = 0;
+      break;
     case distance <= 2000:
-      price = distance
-      break
+      price = distance;
+      break;
     case distance <= 2500:
-    price = 25
-    break
+    price = 25;
+    break;
     case distance > 2500:
-    price = "cannot travel that far"
-    break
+    price = "cannot travel that far";
+    break;
   }
   return price
   }
