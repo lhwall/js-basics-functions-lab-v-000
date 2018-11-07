@@ -10,3 +10,7 @@ function blocksToFeet(blocks){
 function distanceFromHqInFeet(pickup){
   return blocksToFeet(distanceFromHqInBlocks(pickup))
 }
+
+function distanceTravelledInFeet(start, end){
+  return blocksToFeet(Math.abs(start - end))
+}
