@@ -16,11 +16,11 @@ function distanceTravelledInFeet(start, end){
 }
 
 function calculatesFarePrice(start, destination){
-
+  const distance = distanceTravelledInFeet(start, destination)
   let price;
 
-  switch (distanceTravelledInFeet(start, destination)) {
-    case <= 400:
+  switch (distance) {
+    case distance <= 400:
       price = 0;
       break;
     case distance <= 2000:
